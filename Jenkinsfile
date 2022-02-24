@@ -24,7 +24,7 @@ agent any
             steps {
                 // Tomcat deploy
                     
-                    sh "curl -v -u admin:adminadmin -T /var/lib/jenkins/workspace/spring3/target/spring3-mvc-maven-xml-hello-world-1.0-SNAPSHOT.war 'http://ec2-3-110-174-58.ap-south-1.compute.amazonaws.com:8080/manager/text/deploy?path=/Dev_UAE&update=true'"
+                    sh "curl -v -u admin:adminadmin -T /var/lib/jenkins/workspace/spring3/target/spring3-mvc-maven-xml-hello-world-1.0-SNAPSHOT.war 'http://ec2-3-110-174-58.ap-south-1.compute.amazonaws.com:8080/manager/text/deploy?path=/Pro_USA&update=true'"
                               
                }    
            
