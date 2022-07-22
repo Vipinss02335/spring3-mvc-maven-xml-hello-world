@@ -4,7 +4,7 @@ agent any
    stages {
         stage ('SCM') {
             steps {
-                 git credentialsId: 'github_credentials', url: 'https://github.com/Ratheesh1986/spring3-mvc-maven-xml-hello-world.git'
+                 git credentialsId: 'github_credentials1', url: 'https://github.com/Ratheesh1986/spring3-mvc-maven-xml-hello-world.git'
                 }
            }
         stage ('Build') {
@@ -24,7 +24,7 @@ agent any
             steps {
                 // Tomcat deploy
                     
-                    sh "curl -v -u admin:adminadmin -T /var/lib/jenkins/workspace/spring3/target/spring3-mvc-maven-xml-hello-world-1.0-SNAPSHOT.war 'http://ec2-65-1-147-219.ap-south-1.compute.amazonaws.com:8080/manager/text/deploy?path=/uk&update=true'"
+                    sh "curl -v -u admin:adminadmin -T /var/lib/jenkins/workspace/spring3/target/spring3-mvc-maven-xml-hello-world-1.0-SNAPSHOT.war 'http://ec2-3-111-186-183.ap-south-1.compute.amazonaws.com:8080/manager/text/deploy?path=/vipn1&update=true'"
                               
                }    
            
